@@ -63,7 +63,7 @@ class StackTest < Minitest::Test
     @stack.push!('java')
     @stack.clear!
     assert { @stack.to_a == [] }
-    assert { @stack.size.empty? }
+    assert { @stack.empty? }
   end
 
   def test_stack_empty
