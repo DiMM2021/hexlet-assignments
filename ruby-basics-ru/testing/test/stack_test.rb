@@ -1,38 +1,7 @@
 # frozen_string_literal: true
 
-require 'minitest/autorun'
 require_relative 'test_helper'
 require_relative '../lib/stack'
-
-class Stack
-  def initialize
-    @stack = []
-  end
-  
-  def push!(element)
-    @stack.push(element)
-  end
-  
-  def pop!
-    @stack.pop
-  end
-  
-  def clear!
-    @stack.clear
-  end
-  
-  def empty?
-    @stack.empty?
-  end
-  
-  def to_a
-    @stack.to_a
-  end
-  
-  def size
-    @stack.size
-  end
-end
 
 class StackTest < Minitest::Test
   # BEGIN
