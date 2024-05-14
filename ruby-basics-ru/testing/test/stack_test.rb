@@ -8,27 +8,27 @@ class Stack
   def initialize
     @stack = []
   end
-
+  
   def push!(element)
     @stack.push(element)
   end
-
+  
   def pop!
     @stack.pop
   end
-
+  
   def clear!
     @stack.clear
   end
-
+  
   def empty?
     @stack.empty?
   end
-
+  
   def to_a
     @stack.to_a
   end
-
+  
   def size
     @stack.size
   end
@@ -39,7 +39,7 @@ class StackTest < Minitest::Test
   def setup
     @stack = Stack.new
   end
-
+    
   def test_stack_push
     @stack.push!('ruby')
     @stack.push!('php')
@@ -47,7 +47,7 @@ class StackTest < Minitest::Test
     assert { @stack.to_a == %w[ruby php java] }
     assert { @stack.size == 3 }
   end
-
+    
   def test_stack_pop
     @stack.push!('ruby')
     @stack.push!('php')
@@ -56,7 +56,7 @@ class StackTest < Minitest::Test
     assert { @stack.to_a == %w[ruby php] }
     assert { @stack.size == 2 }
   end
-
+    
   def test_stack_clear
     @stack.push!('ruby')
     @stack.push!('php')
@@ -65,7 +65,7 @@ class StackTest < Minitest::Test
     assert { @stack.to_a == [] }
     assert { @stack.empty? }
   end
-
+    
   def test_stack_empty
     @stack.push!('ruby')
     @stack.push!('php')
