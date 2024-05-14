@@ -9,7 +9,6 @@ vendor/
 dist
 *.lock
 package-lock.json
-Gemfile.lock
 tmp/
 !.keep
 *.log
