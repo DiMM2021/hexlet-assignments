@@ -7,7 +7,6 @@
 node_modules/
 vendor/
 dist
-*.lock
 package-lock.json
 tmp/
 !.keep
