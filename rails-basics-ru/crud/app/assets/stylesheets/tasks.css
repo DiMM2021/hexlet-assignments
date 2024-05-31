@@ -1,0 +1,67 @@
+#error_explanation {
+  color: red;
+  margin-bottom: 20px;
+}
+
+#error_explanation h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#error_explanation ul {
+  list-style-type: none;
+}
+
+#error_explanation li {
+  margin: 5px 0;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 25%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+form .btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #337ab7;
+  color: #fff;
+}
+
+form .btn:hover {
+  background-color: #23527c;
+}
+
+.inline-checkbox {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+
+.inline-checkbox label {
+  margin-right: 10px; 
+}
+  
