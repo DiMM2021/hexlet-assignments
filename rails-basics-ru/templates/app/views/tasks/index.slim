@@ -1,0 +1,22 @@
+h1 Tasks List
+table
+  tr
+    th Name
+    th Description
+    th Status
+    th Creator
+    th Performer
+    th Completed
+    th Actions
+  - @tasks.each do |task|
+    tr
+      td = task.name
+      td = task.description
+      td = task.status
+      td = task.creator
+      td = task.performer
+      td = task.completed ? 'Yes' : 'No'
+      td
+        = link_to 'Show', task_path(task), class: 'btn btn-primary'
+        = link_to 'Edit', edit_task_path(task), class: 'btn btn-secondary'
+        = link_to 'Delete', task_path(task), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
