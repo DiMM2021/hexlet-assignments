@@ -1,0 +1,36 @@
+= content_for :title do
+  = @user.name
+
+/ BEGIN
+<h1><%= @user.name %></h1>
+
+<h2>Tasks</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user.tasks.each do |task| %>
+      <tr>
+        <td><%= task.name %></td>
+        <td><%= task.description %></td>
+        <td><%= task.status.name %></td>
+        <td><%= link_to 'Show', task %></td>
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+/ END
+hr
+
+.d-flex
+  = link_to 'Edit', edit_user_path(@user), class: 'btn btn-outline-primary me-2'
+  = link_to 'Back', :back, class: 'btn btn-outline-primary'
