@@ -1,0 +1,13 @@
+# frozen_string_literal: true
+
+p style="color: green" = notice
+
+h1 Posts
+
+#posts
+  - @posts.each do |post|
+    == render post
+    p
+      = link_to "Show this post", post
+
+= link_to "New post", new_post_path
